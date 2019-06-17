@@ -45,17 +45,10 @@ rules:
 - apiGroups:
   - ""
   resources:
-  - configmaps
-  - endpoints
-  - persistentvolumeclaims
-  - pods
   - replicationcontrollers
   - replicationcontrollers/scale
   - serviceaccounts
-  - services
   - nodes
-  - persistentvolumeclaims
-  - persistentvolumes
   verbs:
   - get
   - list
@@ -64,11 +57,8 @@ rules:
   - ""
   resources:
   - bindings
-  - events
   - limitranges
   - namespaces/status
-  - pods/log
-  - pods/status
   - replicationcontrollers/status
   - resourcequotas
   - resourcequotas/status

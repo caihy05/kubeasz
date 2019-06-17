@@ -33,6 +33,7 @@ rules:
   - pods/status
   - events
   - ingresses
+  - secrets
   verbs:
   - get
   - list
@@ -84,19 +85,6 @@ rules:
   - list
   - watch
 - apiGroups:
-  - apps
-  resources:
-  - daemonsets
-  - deployments
-  - deployments/scale
-  - replicasets
-  - replicasets/scale
-  - statefulsets
-  verbs:
-  - get
-  - list
-  - watch
-- apiGroups:
   - autoscaling
   resources:
   - horizontalpodautoscalers
@@ -115,15 +103,12 @@ rules:
   - watch
 - apiGroups:
   - extensions
+  - apps
   resources:
   - daemonsets
   - deployments
   - deployments/scale
   - ingresses
-  - networkpolicies
-  - replicasets
-  - replicasets/scale
-  - replicationcontrollers/scale
   verbs:
   - get
   - list

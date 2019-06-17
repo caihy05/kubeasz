@@ -27,12 +27,12 @@ rules:
   - endpoints
   - pods
   - services
-  - nodes
   - persistentvolumeclaims
   - persistentvolumes
   - pods/log
   - pods/status
   - events
+  - ingresses
   verbs:
   - get
   - list
@@ -128,6 +128,7 @@ rules:
   - get
   - list
   - watch
+  - patch
 - apiGroups:
   - policy
   resources:

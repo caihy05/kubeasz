@@ -17,6 +17,29 @@ kind: ClusterRole
 metadata:
   name: read-clusterrole
 rules:
+
+- apiGroups:
+  - ""
+  resources:
+  - deployments
+  - deployments/scale
+  - configmaps
+  - endpoints
+  - pods
+  - services
+  - nodes
+  - persistentvolumeclaims
+  - persistentvolumes
+  - pods/log
+  - pods/status
+  - events
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - delete
+  - update
 - apiGroups:
   - ""
   resources:

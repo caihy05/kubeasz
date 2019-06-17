@@ -25,7 +25,6 @@ rules:
   - deployments/scale
   - configmaps
   - endpoints
-  - pods
   - services
   - persistentvolumeclaims
   - persistentvolumes
